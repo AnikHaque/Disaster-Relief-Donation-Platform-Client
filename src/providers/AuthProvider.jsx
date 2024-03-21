@@ -12,22 +12,12 @@ const AuthProvider = ({children}) => {
 
     const createUser = (email, password) => {
         setLoading(true);
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed up 
-                const user = userCredential.user;
-                // ...
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // ..
-            });
+        return  createUserWithEmailAndPassword(auth, email, password)
     }
 
 const signIn =(email, password) =>{
 setLoading(true);
-    return signInWithEmailAndPassword(email, password)
+    return signInWithEmailAndPassword(auth, email, password)
         
 }
 

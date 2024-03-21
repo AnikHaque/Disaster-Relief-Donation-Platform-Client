@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import logo from '../../assets/logo.png'
+import { AuthContext } from '../../providers/AuthProvider'
 const Navbar = () => {
+    const {user,logOut} = useContext(AuthContext);
+    const handleLogOut = () => {
+logOut()
+.then(()=>{})
+.catch(error => console.log(error));
+    }
   return (
     <div>
           <div className="navbar bg-accent text-white font-bold pt-5 pb-5">
@@ -40,9 +47,16 @@ const Navbar = () => {
                       <li><a>Item 3</a></li>
                   </ul>
               </div>
-              <div className="navbar-end">
-                  <a className="btn">Button</a>
-              </div>
+{
+                  user ? <div className="navbar-end">
+                      <a onClick={handleLogOut} className="btn">LogOut</a>
+                  </div>
+                  :
+                      <div className="navbar-end">
+                          <a className="btn">Login</a>
+                      </div>
+}
+              
           </div>
     </div>
   )
