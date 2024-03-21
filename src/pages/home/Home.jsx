@@ -14,6 +14,8 @@ const Home = () => {
         }
     }
 
+    
+
     const styles = {
         colr: {
             color: '#2A9D8F',
