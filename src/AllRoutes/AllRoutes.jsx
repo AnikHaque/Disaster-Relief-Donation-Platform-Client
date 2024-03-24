@@ -25,10 +25,6 @@ export const router = createBrowserRouter([
         element: <Test></Test>,
       },
       {
-        path: "testt",
-        element: <Test></Test>,
-      },
-      {
         path: "create-donation",
         element: <CreateDonation></CreateDonation>,
       },

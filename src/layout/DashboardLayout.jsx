@@ -10,10 +10,12 @@ const DashboardLayout = () => {
             <NavLink to="/dashboard/test">Create Test</NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard/testt">Create Testtttt</NavLink>
+            <NavLink to="/dashboard/create-donation">Create Donation</NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard/create-donation">Create Donation</NavLink>
+            <NavLink to="/dashboard/create-donationdfdfdf">
+              Create Donations
+            </NavLink>
           </li>
         </ul>
       </div>
