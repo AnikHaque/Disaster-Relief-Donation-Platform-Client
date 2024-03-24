@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# L2B2-Frontend-Path-Assignment-6-Peace-Donation-Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Link:
 
-## Available Scripts
+Website Live Link: [peace](https://peace-donation.netlify.app/).
 
-In the project directory, you can run:
+## Installation:
 
-### `npm start`
+1. Clone the repository.
+2. Install dependencies using `pnpm install`.
+3. Run the website using `pnpm run dev`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Welcome to Peace - where every act of kindness makes a difference. At Peace, we believe in the power of giving and the impact it can have on the lives of those in need. Explore our donation posts below and join us in spreading hope, compassion, and support to communities around the world. Together, let's make the world a brighter and more peaceful place for everyone. At Peace, we believe that every act of kindness, no matter how small, has the power to create positive change. Join us on our mission to build a more peaceful and equitable world through the simple act of giving. Together, we can make a difference.
 
-### `npm test`
+## Features :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. A user-friendly website facilitating donations where users can contribute to various donation provided by the admin.
+2. Anyone can see the posts of the donations.
+3. Only Authenticate user donate and explore the dashborad
+4. An interactive UI design that invites users to explore and engage with the website effortlessly, facilitating seamless navigation and interaction
 
-### `npm run build`
+## Tecnology I have Used:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.TypeScript 2. React JS 3. Redux 4. Tailwind CSS 5. ShadCn 6. RTK Query 6. React Hook Form 7. Redux Persist
