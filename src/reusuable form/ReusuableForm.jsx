@@ -1,30 +1,38 @@
-// ReusableForm.js
-import React from 'react';
-import { useForm } from 'react-hook-form';
+import React, { useState } from "react";
 
-const ReusableForm = ({ inputs, onSubmit }) => {
-    const { register, handleSubmit, errors } = useForm();
+function ReusableForm({ onSubmit, initialValues = {}, inputFields }) {
+  const [formData, setFormData] = useState(initialValues);
 
-    const handleFormSubmit = (data) => {
-        onSubmit(data);
-    };
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
 
-    return (
-        <form onSubmit={handleSubmit(handleFormSubmit)}>
-            {inputs.map((input, index) => (
-                <div key={index}>
-                    <label htmlFor={input.name}>{input.label}</label>
-                    <input
-                        type={input.type}
-                        name={input.name}
-                        ref={register(input.validation)}
-                    />
-                    {errors[input.name] && <span>{errors[input.name].message}</span>}
-                </div>
-            ))}
-            <button type="submit">Submit</button>
-        </form>
-    );
-};
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onSubmit(formData);
+  };
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        {inputFields.map((field) => (
+          <div key={field.name}>
+            {field.label && <label htmlFor={field.name}>{field.label}</label>}{" "}
+            <input
+              key={field.name}
+              type={field.type}
+              name={field.name}
+              value={formData[field.name]}
+              onChange={handleChange}
+              placeholder={field.placeholder}
+            />
+            <br />
+          </div>
+        ))}
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
 
 export default ReusableForm;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReusableForm from "../reusuable form/ReusuableForm";
 
-function App() {
+function TestForm() {
   const handleAddUser = async (data) => {
     try {
       const response = await fetch("http://localhost:5000/users", {
@@ -24,6 +24,8 @@ function App() {
   const userFormFields = [
     { type: "text", name: "name", placeholder: "Enter your name" },
     { type: "email", name: "email", placeholder: "Enter your email" },
+    { type: "text", name: "email", placeholder: "Enter your age" },
+    { type: "picture", name: "email", placeholder: "Enter your picture" },
   ];
 
   return (
@@ -40,4 +42,4 @@ function App() {
   );
 }
 
-export default App;
+export default TestForm;

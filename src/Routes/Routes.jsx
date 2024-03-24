@@ -1,34 +1,19 @@
-import {
-    createBrowserRouter,
-    Link,
-} from "react-router-dom";
-import Main from "../layout/Main";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home/Home";
-import MyFormComponent from "../pages/MyFormComponent";
-import Login from "../pages/login/Login";
-import SignUp from "../pages/signUp/SignUp";
+import routeGenerator from "../utils/routesGenerator";
+import { userPaths } from "./users.routes";
+import App from "../App";
 
-export const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Main></Main>,
-        children:[
-            {
-                path:'/',
-                element: <Home></Home>
-            },
-            {
-                path: '/login',
-                element: <Login></Login>
-            },
-            {
-                path: '/signup',
-                element: <SignUp></SignUp>
-            },
-        ]
-    },
-    {
-        path: "about",
-        element: <div>About</div>,
-    },
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/users",
+    element: <App />,
+    children: routeGenerator(userPaths),
+  },
 ]);
+
+export default router;
