@@ -10,6 +10,13 @@ const donationsApi = apiSlice.injectEndpoints({
         body: data,
       }),
     }),
+
+    donationsGet: builder.query({
+      // note: an optional `queryFn` may be used in place of `query`
+      query: () => ({
+        url: "/donations",
+      }),
+    }),
   }),
 });
 
