@@ -7,7 +7,7 @@ import { RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./redux/app/store";
 import AuthProvider from "./providers/AuthProvider";
-import router from "./Routes/routes";
+import { router } from "./AllRoutes/AllRoutes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
