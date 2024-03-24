@@ -1,23 +1,24 @@
 import { apiSlice } from "../api/apiSlice";
 
-const donationsApi = apiSlice.injectEndpoints({
+const testimonialApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
-    donationPost: builder.mutation({
+    testimonialPost: builder.mutation({
       // note: an optional `queryFn` may be used in place of `query`
       query: (data) => ({
-        url: "/donation",
+        url: "/testimonial",
         method: "POST",
         body: data,
       }),
     }),
 
-    donationsGet: builder.query({
+    testimonialGet: builder.query({
       // note: an optional `queryFn` may be used in place of `query`
       query: () => ({
-        url: "/donations",
+        url: "/testimonial",
       }),
     }),
   }),
 });
 
-export const { useDonationPostMutation, useDonationsGetQuery } = donationsApi;
+export const { useTestimonialPostMutation, useTestimonialGetQuery } =
+  testimonialApi;

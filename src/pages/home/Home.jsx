@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useUsersPostMutation } from "../../redux/features/users/usersApi";
 import HeroSection from "../../components/Hero-Section/HerSection";
+import Testimonials from "../../components/Get-Testimonials/Testimonials";
 
 const Home = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -32,6 +33,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection></HeroSection>
+      <Testimonials></Testimonials>
     </div>
   );
 };
